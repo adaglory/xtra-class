@@ -1,0 +1,22 @@
+.coremembers {
+  padding-top: 15px;
+}
+.coremembers > .nav-tabs {
+  border-bottom: none;
+}
+.nav-items {
+  background-color: #22ccaa;
+  color: #fff;
+}
+.coremembers__nav > .nav-link {
+  color: #fff !important;
+  background-color: #c4c4c4 !important;
+  margin: 15px 0;
+  border-radius: 3px !important;
+  cursor: pointer;
+}
+.coremembers__nav > .nav-link.active {
+  background-color: #22ccaa !important;
+  border: none !important;
+  border-radius: 3px !important;
+}

@@ -1,0 +1,15 @@
+.hero__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  padding-top: 100px;
+  font-family: "Roboto", sans-serif;
+}
+.hero__bg {
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 350px;
+}

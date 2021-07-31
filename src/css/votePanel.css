@@ -1,0 +1,16 @@
+.votePanel > .nav-tabs {
+  position: relative;
+  top: -41px;
+  background-color: #eee;
+  border-bottom: none;
+  width: fit-content;
+}
+.nav-link {
+  color: gray !important;
+  cursor: pointer;
+}
+.nav-link.active {
+  background-color: #fff !important;
+  border-radius: 0 !important;
+  border: 1px solid #0b7ec0 !important;
+}
