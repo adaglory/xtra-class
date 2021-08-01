@@ -1,14 +1,19 @@
 import "./css/coreMembers.css";
 import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col, Container } from "reactstrap";
-import { useState } from "react";
 import classnames from "classnames";
 import Members from "./members";
+import { useState } from "react";
 import member1 from "./images/member1.png";
 const CoreMembers = () => {
   const [activeTab, setActiveTab] = useState("1");
   const toggle = (tab) => {
     if (activeTab !== tab) setActiveTab(tab);
   };
+  const [members] = useState([
+    { img: member1, name: "Adojah Frimpong", description: "Adojah the leader", colorTag: "BlueTeam", id: 1 },
+    { img: member1, name: "Adojah Frimpong", description: "Adojah the leader", colorTag: "BlueTeam", id: 2 },
+    { img: member1, name: "Adojah Frimpong", description: "Adojah the leader", colorTag: "BlueTeam", id: 3 },
+  ]);
   return (
     <div className='coremembers'>
       <Container>
@@ -60,16 +65,7 @@ const CoreMembers = () => {
           <Col md='8'>
             <TabContent activeTab={activeTab}>
               <TabPane tabId='1'>
-                <Container>
-                  <Row>
-                    <Col md='6'>
-                      <Members img={member1} name={"Adojah Frimpong"} description={"adojah the leader"} colorTag={"Blue Team"} />
-                    </Col>
-                    <Col md='6'>
-                      <Members img={member1} name={"Adojah Frimpong"} description={"adojah the leader"} colorTag={"Blue Team"} />
-                    </Col>
-                  </Row>
-                </Container>
+                <Members members={members} />
               </TabPane>
               <TabPane tabId='2'>
                 <h2>Tab 2</h2>
