@@ -1,6 +1,9 @@
 .coremembers {
   padding-top: 15px;
 }
+.coremembers > .container{
+  padding: 30px;
+}
 .coremembers > .nav-tabs {
   border-bottom: none;
 }

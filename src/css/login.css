@@ -17,7 +17,7 @@
   width: 50%;
   margin-top: 30px;
 }
-.login__form > h3 {
+.login__header > h3 {
   color: #0b7ec0;
   padding-top: 15px;
 }
@@ -30,16 +30,31 @@
   align-self: center;
   justify-content: center;
 }
-.login__inputs > button {
+.button__container > button {
   width: 100%;
   margin-top: 50px;
   margin-bottom: 20px;
 }
-.login__inputs > .btn-primary {
+.button__container > .btn-primary {
   background-color: #0b7ec0 !important;
+}
+.button__container > p{
+  color: #0b7ec0;
+  cursor: pointer;
+}
+.button__container > p > span:hover{
+  color: blue;
 }
 .login__inputs > input {
   margin-top: 35px;
   color: #0b7ec0 !important;
   padding: 15px;
+}
+.error__message{
+  color: #ff0000;
+ background-color: rgba(255, 0, 0, 0.1);
+  padding: 10px;
+  border: 1px solid #ff0000;
+  border-radius: 5px;
+  margin-top: 10px;
 }

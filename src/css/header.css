@@ -20,13 +20,14 @@
   padding-right: 10px;
   font-size: 30px;
 }
-.header__input > button {
+.header__input > .btn {
   display: flex;
-
+background-color: #eee !important;
   align-items: center;
   border-radius: 30px;
   border: 1px solid #1c98e0;
   padding: 3px 20px;
+  color: black !important;
 }
 .input__button {
   font-weight: 700 !important ;
